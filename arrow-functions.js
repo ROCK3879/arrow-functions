@@ -4,11 +4,29 @@
  */
 
 // Vanilla JavaScript Function
-
-// Arrow Function With Parameters
-
-// Single Line Arrow Function With Parameters
-
-// Implicit Returns
-
-// Returning Multiple Lines
+function greet(name) {
+    return 'Hello, ' + name + '!';
+  }
+  console.log(greet('World'));
+  
+  // Arrow Function With Parameters
+  const greetArrow = (name) => {
+    return 'Hello, ' + name + '!';
+  };
+  console.log(greetArrow('World'));
+  
+  // Single Line Arrow Function With Parameters
+  const greetSingleLine = (name) => 'Hello, ' + name + '!';
+  console.log(greetSingleLine('World'));
+  
+  // Implicit Returns
+  const greetImplicit = name => 'Hello, ' + name + '!';
+  console.log(greetImplicit('World'));
+  
+  // Returning Multiple Lines
+  const greetMultiLine = name => {
+    const greeting = 'Hello, ';
+    return greeting + name + '!';
+  };
+  console.log(greetMultiLine('World'));
+  
